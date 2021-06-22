@@ -8,3 +8,6 @@ The script I am uploading will build a modular environment based on the scenario
 Later I will upload more scripts as well as practice files
 
 I would love to hear enlightening comments
+
+You can email me at ozsaid@hotmail.com
+or find me in linkedin https://www.linkedin.com/in/ozsaid/
