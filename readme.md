@@ -1,4 +1,4 @@
-﻿![](https://github.com/ozsaid/ActiveDirectory-AutoLab/blob/main/Labs/lab.png)
+﻿![](https://github.com/ozsaid/activedirectory-autolab/blob/main/labs/lab.png)
 # Welcome to Active Directory AutoLab
 
 After seeing several attempts to create a simulation for students in networking courses.
@@ -9,3 +9,12 @@ The script I am uploading will build a modular environment based on the scenario
 Later I will upload more scripts as well as practice files
 
 I would love to hear enlightening comments
+
+The first step it to build the base files for hyper-v
+you will need ISO files of SERVER 2019 and Windows 10
+
+run the base scripts after that run the classlab script
+and you can start practice the lab files in lab folder
+
+have fun ...
+
