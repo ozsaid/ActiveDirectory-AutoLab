@@ -13,6 +13,7 @@
 #>
 #שלב ראשון יצירת הדיסק הוירטואלי
 #verify the file doesn't already exist
+mkdir C:\BASE
 [string]$Path="C:\BASE\BASE19.vhdx"
 if (Test-Path -Path $path) {
     Write-Host "Disk image at $path already exists."
