@@ -1,6 +1,6 @@
 ﻿<# 
 סקריפט בניית קבצי בייס לשימוש המעבדה
-הסקריפט בונה קובץ מתוך אימג' של שרת 2019
+הסקריפט בונה קובץ מתוך אימג' של ווינדוס 10
 מתקין בתוכו קובץ תשובות 
 מבצע לו אקטיבציה
 
@@ -22,7 +22,7 @@ if (Test-Path -Path $path) {
 } 
 Add-Type -AssemblyName PresentationFramework
 Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.MessageBox]::Show("Press OK to Select The Server 2019 ISO FILE (Default location C:\iso)")
+[System.Windows.MessageBox]::Show("Press OK to Select The Windows 10 ISO FILE (Default location C:\iso)")
 #FILE EXPLORER DIALOG
 $FileBrowser = New-Object System.Windows.Forms.OpenFileDialog -Property @{ 
     InitialDirectory = 'C:\ISO'
