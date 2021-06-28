@@ -1,4 +1,4 @@
-﻿![](https://github.com/ozsaid/activedirectory-autolab/blob/main/labs/lab.png)
+﻿![](https://github.com/ozsaid/ActiveDirectory-AutoLab/blob/main/Labs/lab.png)
 # Welcome to Active Directory AutoLab
 
 After seeing several attempts to create a simulation for students in networking courses.
