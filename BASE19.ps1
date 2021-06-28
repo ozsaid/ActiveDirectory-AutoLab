@@ -22,7 +22,7 @@ if (Test-Path -Path $path) {
 } 
 Add-Type -AssemblyName PresentationFramework
 Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.MessageBox]::Show("Press OK to Select The Server 2019 ISO FILE (Default location C:\iso)")
+[System.Windows.MessageBox]::Show("Press OK to Select The Server 2019 ISO FILE (Default location C:\iso) Please Select Desktop Version")
 #FILE EXPLORER DIALOG
 $FileBrowser = New-Object System.Windows.Forms.OpenFileDialog -Property @{ 
     InitialDirectory = 'C:\ISO'
