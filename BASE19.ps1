@@ -195,10 +195,10 @@ $RefVHDXPath = 'C:\BASE\BASE19.vhdx'
 Mount-VHD -Path $RefVHDXPath 
 $VHDDisk = Get-DiskImage -ImagePath $RefVHDXPath | Get-Disk
 $VHDDiskNumber = [string]$VHDDisk.Number
-$DNumber=(get-disk | Where-Object PartitionStyle -eq 'GPT').Number
-Get-Partition -DiskNumber $DNumber | Where-Object Type -eq 'Basic' | Set-Partition -NewDriveLetter W 
+#$DNumber=(get-disk | Where-Object PartitionStyle -eq 'GPT').Number
+Get-Partition -DiskNumber $VHDDiskNumber | Where-Object Type -eq 'Basic' | Set-Partition -NewDriveLetter W 
 Format-Volume -DriveLetter W -FileSystem NTFS -NewFileSystemLabel Windows -Confirm:$false -Force 
-Get-Partition -DiskNumber $DNumber | Where-Object Type -eq 'System' | Set-Partition -NewDriveLetter S
+Get-Partition -DiskNumber $VHDDiskNumber | Where-Object Type -eq 'System' | Set-Partition -NewDriveLetter S
 Format-Volume -DriveLetter S -FileSystem FAT32 -Confirm:$false -Force
 $IndexList = Get-WindowsImage -ImagePath $WimFile
 Write-Verbose "$($indexList.count) images found"
