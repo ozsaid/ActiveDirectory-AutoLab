@@ -286,6 +286,9 @@ $ACT=$env:Temp
 iwr "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/refs/heads/master.zip" -OutFile $ACT\act.zip
 Expand-Archive -Path $ACT\act.zip -DestinationPath $ACT -Force
 copy-item "$ACT\Microsoft-Activation-Scripts-master\MAS_1.4\Separate-Files-Version\Activators\HWID-KMS38_Activation\" -Destination W:\windows\setup\scripts -Recurse 
-Rename-Item -Path W:\windows\setup\scripts\KMS38_Activation.cmd -NewName SetupComplete.cmd
+New-Item  W:\windows\setup\scripts\SetupComplete.cmd
+$SCRIPT = "W:\windows\setup\scripts\SetupComplete.cmd"
+Add-Content $SCRIPT 'echo | call C:\windows\setup\scripts\KMS38_Activation.cmd'
+#Rename-Item -Path W:\windows\setup\scripts\KMS38_Activation.cmd -NewName SetupComplete.cmd
 Dismount-VHD $RefVHDXPath 
 Dismount-DiskImage -ImagePath $ISOFILE
